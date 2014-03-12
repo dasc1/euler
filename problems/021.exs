@@ -2,8 +2,8 @@ defmodule X do
 
   def answer do
     4..9999
-    |> Enum.filter(&amicable?/1)
-    |> sum
+    |> Xutils.parfilter(&amicable?/1)
+    |> Xmath.sum
   end
 
   def amicable?(n) do
@@ -17,12 +17,8 @@ defmodule X do
   def divisors(n) do
     a = 2..div(n,2)
     |> Enum.filter(&(rem(n, &1) == 0))
-    |> sum
+    |> Xmath.sum
     a + 1
   end
-
-  def sum(xs), do: _sum(xs, 0)
-  defp _sum([],tot), do: tot
-  defp _sum([a|tail], tot), do: _sum(tail, tot+a)
 
 end # defmodule
