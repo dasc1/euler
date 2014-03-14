@@ -2,7 +2,7 @@ defmodule Euler2.Mixfile do
   use Mix.Project
 
   def project do
-    [ app: :euler2,
+    [ app: :euler,
       version: "0.0.1",
       elixir: "~> 0.12.4",
       deps: deps ]
@@ -10,7 +10,7 @@ defmodule Euler2.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    [mod: { Euler2, [] }]
+    []
   end
 
   # Returns the list of dependencies in the format:
@@ -19,6 +19,8 @@ defmodule Euler2.Mixfile do
   # To specify particular versions, regardless of the tag, do:
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
-    []
+    [
+      { :exlibs, "0.0.1", github: "dasc1/exlibs" }
+    ]
   end
 end
