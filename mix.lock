@@ -1,1 +1,2 @@
-[ "exlibs": {:git, "git://github.com/dasc1/exlibs.git", "db691f39122af85853211915b7be33fd250ceb25", []} ]
+[ "ex_doc": {:git, "git://github.com/elixir-lang/ex_doc.git", "c14203bfca186f68ff178e5ada9af4f5fb37e205", []},
+  "exlibs": {:git, "git://github.com/dasc1/exlibs.git", "42c2318cac295027b2aab61d0e94aa496982bc8b", []} ]
